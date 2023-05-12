@@ -1,0 +1,9 @@
+{
+	"name": "administrator/yy.guahao",
+	"require": {
+		"nesbot/carbon": "^2.66"
+	},
+	"config": {
+		"platform-check": false
+	}
+}
