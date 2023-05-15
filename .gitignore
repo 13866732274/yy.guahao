@@ -2,3 +2,5 @@
 /composer.phar
 /ET99Setup.exe
 /yy.huangshuxiu.com_CFGyYD.7z
+vender/*
+node_modules/*
