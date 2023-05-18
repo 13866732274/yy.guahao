@@ -1,4 +1,6 @@
 <?php
+// header("Content-type: text/html; charset=gb2312");
+// require '../../vendor/autoload.php';
 require "../lib/set_env.php";
 require "../lib/class.fastjson.php";
 // 报表核心定义:
@@ -111,7 +113,9 @@ foreach ($zengjian as $key => $value) {
                 <span>日期
                     <?php echo date("Y-m-d"); ?>
                 </span>
-                <span>星期<?php echo substr("日一二三四五六", date("w") * 2, 2); ?></span>
+                <span>星期
+                    <?php echo substr("日一二三四五六", date("w") * 2, 2); ?>
+                </span>
             </div>
         </div>
     </div>
@@ -126,7 +130,9 @@ foreach ($zengjian as $key => $value) {
                     </li>
                     <li class="item">
                         <div class="fz bold">榜眼</div>
-                        <div class="fz"><?php echo $kf_arr[1]['author']; ?></div>
+                        <div class="fz">
+                            <?php echo $kf_arr[1]['author']; ?>
+                        </div>
                     </li>
                     <li class="item">
                         <div class="fz bold">状元</div>
@@ -136,7 +142,9 @@ foreach ($zengjian as $key => $value) {
                     </li>
                     <li class="item">
                         <div class="fz bold">探花</div>
-                        <div class="fz"><?php echo $kf_arr[2]['author']; ?></div>
+                        <div class="fz">
+                            <?php echo $kf_arr[2]['author']; ?>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -215,7 +223,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class=" ic"></i><?php echo $baifenbi[1]; ?>%</span>
+                                ?>">比上月<i class=" ic"></i>
+                                    <?php echo $baifenbi[1]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -228,7 +238,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class=" ic"></i><?php echo $baifenbi[2]; ?>%</span>
+                                ?>">比上月<i class=" ic"></i>
+                                    <?php echo $baifenbi[2]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -241,7 +253,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[3]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[3]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -254,7 +268,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class=" ic"></i><?php echo $baifenbi[4]; ?>%</span>
+                                ?>">比上月<i class=" ic"></i>
+                                    <?php echo $baifenbi[4]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -267,7 +283,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[5]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[5]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -280,7 +298,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[6]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[6]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -293,7 +313,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[7]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[7]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -306,7 +328,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[8]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[8]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -319,7 +343,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[9]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[9]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -332,7 +358,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[10]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[10]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -345,7 +373,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[11]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[11]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -358,7 +388,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[12]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[12]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -371,7 +403,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[13]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[13]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -384,7 +418,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[14]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[14]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -397,7 +433,9 @@ foreach ($zengjian as $key => $value) {
                                 } else {
                                     echo "down";
                                 }
-                                ?>">比上月<i class="ic"></i><?php echo $baifenbi[15]; ?>%</span>
+                                ?>">比上月<i class="ic"></i>
+                                    <?php echo $baifenbi[15]; ?>%
+                                </span>
                             </td>
                         </tr>
                         <tr class="line">
@@ -442,33 +480,33 @@ foreach ($zengjian as $key => $value) {
     </div>
     <script src="js/jquery.min.js"></script>
     <script>
-    let dom = $('.tablebox')
-    let domnum = dom[0].offsetHeight;
-    let cur = null
-    $(window).scroll(function(event) {
-        let Ttop = dom[0].offsetTop
-        let toTop = $(window).scrollTop()
-        if (Ttop - toTop < window.innerHeight / 1.5) {
-            if (cur == null) {
-                cur = toTop
+        let dom = $('.tablebox')
+        let domnum = dom[0].offsetHeight;
+        let cur = null
+        $(window).scroll(function (event) {
+            let Ttop = dom[0].offsetTop
+            let toTop = $(window).scrollTop()
+            if (Ttop - toTop < window.innerHeight / 1.5) {
+                if (cur == null) {
+                    cur = toTop
+                }
             }
-        }
-        if (cur != null) {
-            if (toTop - cur > 0 && toTop - cur < domnum) {
-                $('.floatleft').css('top', toTop - cur + 'px')
-                $('.floatleft').css('bottom', 'auto')
-            } else if (toTop - cur > domnum) {
+            if (cur != null) {
+                if (toTop - cur > 0 && toTop - cur < domnum) {
+                    $('.floatleft').css('top', toTop - cur + 'px')
+                    $('.floatleft').css('bottom', 'auto')
+                } else if (toTop - cur > domnum) {
 
-                $('.floatleft').css('top', 'auto')
-                $('.floatleft').css('bottom', '0')
-            } else {
-                $('.floatleft').css('bottom', 'auto')
-                $('.floatleft').css('top', 0 + 'px')
+                    $('.floatleft').css('top', 'auto')
+                    $('.floatleft').css('bottom', '0')
+                } else {
+                    $('.floatleft').css('bottom', 'auto')
+                    $('.floatleft').css('top', 0 + 'px')
+                }
             }
-        }
 
 
-    });
+        });
     </script>
 </body>
 
